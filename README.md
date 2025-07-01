@@ -1,62 +1,36 @@
-# ♟️ Catur Online Real-Time
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Screenshot Catur Online](https://i.imgur.com/GzB9kbl.png)
+## Getting Started
 
-Sebuah aplikasi catur online berbasis web yang memungkinkan dua pemain untuk bertanding secara real-time melalui sistem *room*. Proyek ini dibangun menggunakan Next.js dan Socket.IO.
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## ✨ Fitur Utama
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
--   **Gameplay Real-Time:** Gerakan bidak langsung disinkronkan antara dua pemain menggunakan WebSockets.
--   **Sistem Room:** Pemain dapat membuat room baru atau bergabung ke room yang sudah ada menggunakan kode unik.
--   **Validasi Aturan Catur:** Menggunakan `chess.js` untuk memastikan semua gerakan sesuai dengan aturan catur resmi (termasuk skak, skakmat, dan promosi).
--   **Orientasi Papan Otomatis:** Papan catur akan otomatis dibalik untuk pemain yang memegang bidak Hitam.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 💻 Teknologi yang Digunakan
+## Learn More
 
--   **Framework:** [Next.js](https://nextjs.org/)
--   **Komunikasi Real-Time:** [Socket.IO](https://socket.io/)
--   **Logika Catur:** [chess.js](https://github.com/jhlywa/chess.js)
--   **UI Papan Catur:** [react-chessboard](https://github.com/Clariity/react-chessboard)
--   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
--   **Deployment:** [Vercel](https://vercel.com/)
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🚀 Cara Menjalankan Secara Lokal
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Untuk menjalankan proyek ini di komputer Anda, ikuti langkah-langkah berikut:
+## Deploy on Vercel
 
-1.  **Clone repository ini:**
-    ```bash
-    git clone [https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git](https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git)
-    ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-2.  **Masuk ke direktori proyek:**
-    ```bash
-    cd nama-repo-anda
-    ```
-
-3.  **Install semua dependensi:**
-    ```bash
-    npm install
-    ```
-
-4.  **Jalankan server pengembangan:**
-    ```bash
-    npm run dev
-    ```
-
-5.  **Buka browser** dan akses `http://localhost:3000`. Untuk mencoba mode multiplayer, buka di dua tab browser.
-
----
-
-## 🚧 Rencana Pengembangan (To-Do)
-
--   [ ] Implementasi AI (Kecerdasan Buatan) sebagai lawan menggunakan Stockfish.js.
--   [ ] Menambahkan mode penonton (spectator).
--   [ ] Penanganan jika pemain terputus dari permainan.
--   [ ] Menambahkan sistem akun pengguna dan riwayat permainan.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
